@@ -218,11 +218,23 @@ def update_readme(path: Path, profile: dict, generated_at: datetime) -> None:
     start = "<!-- activity:start -->"
     end = "<!-- activity:end -->"
     block = f"""{start}
-**{format_number(total)} contributions** across **{active_days} active days**, with a **{streak}-day current streak**. **{format_number(restricted)} private contributions** appear only as aggregate counts. Public activity includes **{format_number(commits)} commits** and **{format_number(pull_requests)} pull requests**.
+
+<table>
+  <tr>
+    <td align="center"><strong>{format_number(total)}</strong><br><sub>contributions</sub></td>
+    <td align="center"><strong>{format_number(active_days)}</strong><br><sub>active days</sub></td>
+    <td align="center"><strong>{format_number(streak)}</strong><br><sub>day streak</sub></td>
+    <td align="center"><strong>{format_number(restricted)}</strong><br><sub>private, counts only</sub></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2"><strong>{format_number(commits)}</strong><br><sub>public commits</sub></td>
+    <td align="center" colspan="2"><strong>{format_number(pull_requests)}</strong><br><sub>public pull requests</sub></td>
+  </tr>
+</table>
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/github-activity-mobile.svg">
-  <img src="assets/github-activity.svg" alt="GitHub contribution calendar for the 12 months to {format_date(snapshot)}">
+  <img src="assets/github-activity.svg" alt="GitHub contribution calendar for the 12 months to {format_date(snapshot)}" width="100%">
 </picture>
 
 <sub>GitHub API snapshot: {format_timestamp(generated_at)}. Private repository, client, host and deployment details are omitted.</sub>

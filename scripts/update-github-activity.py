@@ -80,6 +80,10 @@ def format_number(value: int) -> str:
     return f"{value:,}"
 
 
+def pluralize(value: int, singular: str, plural: str | None = None) -> str:
+    return singular if value == 1 else plural or f"{singular}s"
+
+
 def format_date(value: date, abbreviated: bool = False) -> str:
     month = value.strftime("%b" if abbreviated else "%B")
     return f"{value.day} {month} {value.year}"
@@ -140,7 +144,9 @@ def render_svg(profile: dict, mobile: bool, generated_at: datetime) -> str:
         .replace("VAR_SUBTITLE", str(subtitle_size))
         .replace("VAR_LABEL", str(label_size))
     )
-    title = f"{format_number(total)} contributions in the past year"
+    title = (
+        f"{format_number(total)} {pluralize(total, 'contribution')} in the past year"
+    )
     description = f"GitHub API contribution calendar through {format_date(snapshot)}. Private work is included only as aggregate counts."
     output = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
@@ -219,18 +225,7 @@ def update_readme(path: Path, profile: dict, generated_at: datetime) -> None:
     end = "<!-- activity:end -->"
     block = f"""{start}
 
-<table>
-  <tr>
-    <td align="center"><strong>{format_number(total)}</strong><br><sub>contributions</sub></td>
-    <td align="center"><strong>{format_number(active_days)}</strong><br><sub>active days</sub></td>
-    <td align="center"><strong>{format_number(streak)}</strong><br><sub>day streak</sub></td>
-    <td align="center"><strong>{format_number(restricted)}</strong><br><sub>private, counts only</sub></td>
-  </tr>
-  <tr>
-    <td align="center" colspan="2"><strong>{format_number(commits)}</strong><br><sub>public commits</sub></td>
-    <td align="center" colspan="2"><strong>{format_number(pull_requests)}</strong><br><sub>public pull requests</sub></td>
-  </tr>
-</table>
+**{format_number(total)} {pluralize(total, "contribution")}** across **{format_number(active_days)} {pluralize(active_days, "active day")}**, with a current streak of **{format_number(streak)} {pluralize(streak, "day")}**. GitHub counted **{format_number(commits)} public {pluralize(commits, "commit contribution")}** and **{format_number(pull_requests)} public {pluralize(pull_requests, "pull request")}**. Private work appears only as an aggregate count of **{format_number(restricted)} {pluralize(restricted, "contribution")}**.
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/github-activity-mobile.svg">

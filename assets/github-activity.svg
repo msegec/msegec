@@ -1,33 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="920" height="250" viewBox="0 0 920 250" role="img" aria-labelledby="title desc">
-  <title id="title">2,892 contributions in the past year</title>
-  <desc id="desc">GitHub contribution calendar through 4 September 2026. Private work is included only as aggregate counts.</desc>
+  <title id="title">2,895 contributions in the past year</title>
+  <desc id="desc">GitHub API contribution calendar through 4 September 2026. Private work is included only as aggregate counts.</desc>
 
   <style>
     :root { color-scheme: light dark; }
-    .card { fill: #ffffff; stroke: #d0d7de; }
-    .title { fill: #1f2328; font: 700 24px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
-    .subtitle { fill: #59636e; font: 500 13px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
-    .label { fill: #59636e; font: 500 12px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
-    rect[data-level="0"] { fill: #eff2f5; }
-    rect[data-level="1"] { fill: #aceebb; }
-    rect[data-level="2"] { fill: #4ac26b; }
-    rect[data-level="3"] { fill: #209c50; }
-    rect[data-level="4"] { fill: #116329; }
+    .card { fill: #f5f2e8; stroke: #cbd5c9; }
+    .title { fill: #18231c; font: 700 24px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+    .subtitle { fill: #5f6e63; font: 500 13px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+    .label { fill: #5f6e63; font: 500 12px -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+    rect[data-level="0"] { fill: #e3e8df; }
+    rect[data-level="1"] { fill: #b9d9a7; }
+    rect[data-level="2"] { fill: #86b866; }
+    rect[data-level="3"] { fill: #4f8a4c; }
+    rect[data-level="4"] { fill: #245a3a; }
     @media (prefers-color-scheme: dark) {
-      .card { fill: #0d1117; stroke: #30363d; }
-      .title { fill: #f0f6fc; }
-      .subtitle, .label { fill: #9198a1; }
-      rect[data-level="0"] { fill: #151b23; }
-      rect[data-level="1"] { fill: #033a16; }
-      rect[data-level="2"] { fill: #196c2e; }
-      rect[data-level="3"] { fill: #2ea043; }
-      rect[data-level="4"] { fill: #56d364; }
+      .card { fill: #0d1511; stroke: #34483b; }
+      .title { fill: #edf3ed; }
+      .subtitle, .label { fill: #a6b3a8; }
+      rect[data-level="0"] { fill: #131e18; }
+      rect[data-level="1"] { fill: #294a32; }
+      rect[data-level="2"] { fill: #3d7748; }
+      rect[data-level="3"] { fill: #58be78; }
+      rect[data-level="4"] { fill: #a2d477; }
     }
   </style>
 
   <rect class="card" x="0.5" y="0.5" width="919" height="249" rx="12"/>
-  <text x="34" y="43" class="title">2,892 contributions in the past year</text>
-  <text x="34" y="69" class="subtitle">Private work is included as counts only. Updated 4 Sep 2026.</text>
+  <text x="34" y="43" class="title">2,895 contributions in the past year</text>
+  <text x="34" y="69" class="subtitle">GitHub API snapshot 4 Sep 2026 at 13:02 AWST. Private work appears as counts only.</text>
   <text x="96" y="93" class="label">Sep</text>
   <text x="152" y="93" class="label">Oct</text>
   <text x="208" y="93" class="label">Nov</text>
@@ -413,7 +413,7 @@
   <rect x="824" y="136" width="11" height="11" rx="2" data-level="2"><title>2026-09-01: 51 contributions</title></rect>
   <rect x="824" y="150" width="11" height="11" rx="2" data-level="1"><title>2026-09-02: 37 contributions</title></rect>
   <rect x="824" y="164" width="11" height="11" rx="2" data-level="1"><title>2026-09-03: 21 contributions</title></rect>
-  <rect x="824" y="178" width="11" height="11" rx="2" data-level="1"><title>2026-09-04: 21 contributions</title></rect>
+  <rect x="824" y="178" width="11" height="11" rx="2" data-level="1"><title>2026-09-04: 24 contributions</title></rect>
   <text x="666" y="235" class="label">Less</text>
   <rect x="706" y="224" width="11" height="11" rx="2" data-level="0"/>
   <rect x="724" y="224" width="11" height="11" rx="2" data-level="1"/>

@@ -1,10 +1,13 @@
 <!-- Public GitHub profile README. Keep client names, private repo names and deployment details out. -->
 
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/profile-hero-mobile.svg">
+  <img src="assets/profile-hero.svg" alt="MZS, practical systems builder in Perth, Western Australia">
+</picture>
+
 <div align="center">
 
 # Mark S
-
-<h3>Practical systems builder in Perth, Western Australia</h3>
 
 **15 years helping people feel confident with their technology, the handyman of digital integrations.**
 
@@ -15,6 +18,8 @@ digital signage and recovery paths.
 **[Portfolio and CV](https://mzs.au)**
 
 </div>
+
+---
 
 ## What I build
 
@@ -72,11 +77,11 @@ An original work-in-progress prototype joining Nextcloud file access with browse
 
 ## Toolbox
 
-**Languages:** TypeScript, JavaScript, Python, PHP, Go, Swift, Kotlin, C and C++
+**Languages:** `TypeScript` `JavaScript` `Python` `PHP` `Go` `Swift` `Kotlin` `C` `C++`
 
-**Web and data:** Node.js, Astro, WebGL, 3D Tiles, WordPress and SQL
+**Web and data:** `Node.js` `Astro` `WebGL` `3D Tiles` `WordPress` `SQL`
 
-**Systems:** Linux, Docker, Cloudflare, Nextcloud, GitHub Actions, Raspberry Pi and Orange Pi
+**Systems:** `Linux` `Docker` `Cloudflare` `Nextcloud` `GitHub Actions` `Raspberry Pi` `Orange Pi`
 
 The stack changes with the job. The preference does not: boring enough to understand,
 visible enough to debug, and owned by the person who has to live with it.
@@ -85,14 +90,14 @@ visible enough to debug, and owned by the person who has to live with it.
 
 <!-- Refresh this block and both SVGs with python3 scripts/update-github-activity.py. -->
 <!-- activity:start -->
-**2,892 contributions** across **107 active days**, with a **41-day current streak**. **2,867 private contributions** appear only as aggregate counts. Public activity includes **6 commits** and **8 pull requests**.
+**2,895 contributions** across **107 active days**, with a **41-day current streak**. **2,869 private contributions** appear only as aggregate counts. Public activity includes **7 commits** and **8 pull requests**.
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/github-activity-mobile.svg">
   <img src="assets/github-activity.svg" alt="GitHub contribution calendar for the 12 months to 4 September 2026">
 </picture>
 
-<sub>Snapshot: 4 September 2026. Private repository, client, host and deployment details are omitted.</sub>
+<sub>GitHub API snapshot: 4 September 2026 at 13:02 AWST. Private repository, client, host and deployment details are omitted.</sub>
 <!-- activity:end -->
 
 ## What I am working on

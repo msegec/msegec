@@ -42,24 +42,24 @@ LEVELS = {
 STYLE = """
   <style>
     :root { color-scheme: light dark; }
-    .card { fill: #ffffff; stroke: #d0d7de; }
-    .title { fill: #1f2328; font: 700 VAR_TITLEpx -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
-    .subtitle { fill: #59636e; font: 500 VAR_SUBTITLEpx -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
-    .label { fill: #59636e; font: 500 VAR_LABELpx -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
-    rect[data-level="0"] { fill: #eff2f5; }
-    rect[data-level="1"] { fill: #aceebb; }
-    rect[data-level="2"] { fill: #4ac26b; }
-    rect[data-level="3"] { fill: #209c50; }
-    rect[data-level="4"] { fill: #116329; }
+    .card { fill: #f5f2e8; stroke: #cbd5c9; }
+    .title { fill: #18231c; font: 700 VAR_TITLEpx -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+    .subtitle { fill: #5f6e63; font: 500 VAR_SUBTITLEpx -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+    .label { fill: #5f6e63; font: 500 VAR_LABELpx -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; }
+    rect[data-level="0"] { fill: #e3e8df; }
+    rect[data-level="1"] { fill: #b9d9a7; }
+    rect[data-level="2"] { fill: #86b866; }
+    rect[data-level="3"] { fill: #4f8a4c; }
+    rect[data-level="4"] { fill: #245a3a; }
     @media (prefers-color-scheme: dark) {
-      .card { fill: #0d1117; stroke: #30363d; }
-      .title { fill: #f0f6fc; }
-      .subtitle, .label { fill: #9198a1; }
-      rect[data-level="0"] { fill: #151b23; }
-      rect[data-level="1"] { fill: #033a16; }
-      rect[data-level="2"] { fill: #196c2e; }
-      rect[data-level="3"] { fill: #2ea043; }
-      rect[data-level="4"] { fill: #56d364; }
+      .card { fill: #0d1511; stroke: #34483b; }
+      .title { fill: #edf3ed; }
+      .subtitle, .label { fill: #a6b3a8; }
+      rect[data-level="0"] { fill: #131e18; }
+      rect[data-level="1"] { fill: #294a32; }
+      rect[data-level="2"] { fill: #3d7748; }
+      rect[data-level="3"] { fill: #58be78; }
+      rect[data-level="4"] { fill: #a2d477; }
     }
   </style>
 """
@@ -83,6 +83,10 @@ def format_number(value: int) -> str:
 def format_date(value: date, abbreviated: bool = False) -> str:
     month = value.strftime("%b" if abbreviated else "%B")
     return f"{value.day} {month} {value.year}"
+
+
+def format_timestamp(value: datetime, abbreviated: bool = False) -> str:
+    return f"{format_date(value.date(), abbreviated)} at {value.strftime('%H:%M %Z')}"
 
 
 def current_streak(days: list[dict]) -> int:
@@ -110,7 +114,7 @@ def month_labels(weeks: list[dict], x_start: int, pitch: int) -> list[tuple[int,
     return labels
 
 
-def render_svg(profile: dict, mobile: bool) -> str:
+def render_svg(profile: dict, mobile: bool, generated_at: datetime) -> str:
     collection = profile["contributionsCollection"]
     calendar = collection["contributionCalendar"]
     weeks = calendar["weeks"]
@@ -137,7 +141,7 @@ def render_svg(profile: dict, mobile: bool) -> str:
         .replace("VAR_LABEL", str(label_size))
     )
     title = f"{format_number(total)} contributions in the past year"
-    description = f"GitHub contribution calendar through {format_date(snapshot)}. Private work is included only as aggregate counts."
+    description = f"GitHub API contribution calendar through {format_date(snapshot)}. Private work is included only as aggregate counts."
     output = [
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="title desc">',
         f'  <title id="title">{html.escape(title)}</title>',
@@ -150,13 +154,13 @@ def render_svg(profile: dict, mobile: bool) -> str:
     if mobile:
         output.extend(
             [
-                f'  <text x="{subtitle_x}" y="{subtitle_y}" class="subtitle">Private work appears as counts only. Updated {format_date(snapshot, True)}.</text>',
+                f'  <text x="{subtitle_x}" y="{subtitle_y}" class="subtitle">API snapshot {format_timestamp(generated_at, True)}.</text>',
             ]
         )
     else:
         output.extend(
             [
-                f'  <text x="{subtitle_x}" y="{subtitle_y}" class="subtitle">Private work is included as counts only. Updated {format_date(snapshot, True)}.</text>',
+                f'  <text x="{subtitle_x}" y="{subtitle_y}" class="subtitle">GitHub API snapshot {format_timestamp(generated_at, True)}. Private work appears as counts only.</text>',
             ]
         )
 
@@ -200,7 +204,7 @@ def render_svg(profile: dict, mobile: bool) -> str:
     return "\n".join(output) + "\n"
 
 
-def update_readme(path: Path, profile: dict) -> None:
+def update_readme(path: Path, profile: dict, generated_at: datetime) -> None:
     collection = profile["contributionsCollection"]
     calendar = collection["contributionCalendar"]
     days = [day for week in calendar["weeks"] for day in week["contributionDays"]]
@@ -221,7 +225,7 @@ def update_readme(path: Path, profile: dict) -> None:
   <img src="assets/github-activity.svg" alt="GitHub contribution calendar for the 12 months to {format_date(snapshot)}">
 </picture>
 
-<sub>Snapshot: {format_date(snapshot)}. Private repository, client, host and deployment details are omitted.</sub>
+<sub>GitHub API snapshot: {format_timestamp(generated_at)}. Private repository, client, host and deployment details are omitted.</sub>
 {end}"""
     current = path.read_text()
     before, separator, remainder = current.partition(start)
@@ -241,11 +245,16 @@ def main() -> None:
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     profile = load_profile(args.login)
+    generated_at = datetime.now().astimezone()
     assets = root / "assets"
     assets.mkdir(exist_ok=True)
-    (assets / "github-activity.svg").write_text(render_svg(profile, mobile=False))
-    (assets / "github-activity-mobile.svg").write_text(render_svg(profile, mobile=True))
-    update_readme(root / "README.md", profile)
+    (assets / "github-activity.svg").write_text(
+        render_svg(profile, mobile=False, generated_at=generated_at)
+    )
+    (assets / "github-activity-mobile.svg").write_text(
+        render_svg(profile, mobile=True, generated_at=generated_at)
+    )
+    update_readme(root / "README.md", profile, generated_at=generated_at)
 
 
 if __name__ == "__main__":

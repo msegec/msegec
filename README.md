@@ -1,4 +1,4 @@
-<!-- Public GitHub profile README. Keep client names, private repo names and deployment details out. -->
+<!-- Public GitHub profile README. Keep client and employer names, private repositories, hosts, incident details, operational counts, screenshots, unreleased ideas and identifiable deployment details out. -->
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/profile-hero-mobile.svg">
@@ -9,79 +9,144 @@
 
 # Mark S
 
-**15 years helping people feel confident with their technology, the handyman of digital integrations.**
+**15+ years helping people feel confident with their technology, the handyman of digital integrations.**
 
 Former integrator, somehow now a hands-on developer. I build and repair systems for
-real work: web apps, automation, self-hosted infrastructure, geospatial tools,
-digital signage and recovery paths.
+real work, from physical hardware and field data through to software, infrastructure
+and the recovery path behind it.
 
-**[Portfolio and CV](https://mzs.au)**
+**[Portfolio](https://mzs.au/portfolio) | [Resume](https://mzs.au/resume)**
+
+[Fifteen years](#fifteen-years-one-thread) | [Work](#work-that-crosses-my-bench) | [Public proof](#public-proof-not-the-whole-picture) | [Activity](#recent-github-activity)
 
 </div>
 
 ---
 
-## What I build
+## TL;DR
 
-I am usually at my best where software meets the awkward bit: existing hardware,
-inherited systems, valuable data, or a workflow that has outgrown the tools around it.
+I am the person people call when the hardware, software and workflow almost fit
+together, but do not.
 
-- **Product and automation:** web tools, dashboards, sign-in, reporting, scheduling and browser extensions.
-- **Geospatial and field data:** drone and LiDAR portals, photogrammetry, 3D Tiles and WebGL viewers.
-- **Platforms and infrastructure:** self-hosted AI, Linux, Docker, Cloudflare, Nextcloud and release pipelines.
-- **Recovery and handover:** inherited code, data recovery, release packaging and documentation people can use.
+For more than 15 years I have moved between electronics, networks, field systems,
+spatial data and web software. I use *developer* as a convenient label, but it only
+covers part of the bench.
 
-## Selected public work
+The common thread: understand the job, find the weak point, build a dependable path,
+then leave the owner with something they can understand and keep using.
 
-These are the useful public pieces I can show. Where a project builds on someone
-else's work, I say so.
+> Sometimes the answer is code. Sometimes it is a cable, a process change, or knowing
+> not to touch anything until the data is safe.
 
-<h3><a href="https://github.com/msegec/t3code_rookie">T3 Code: features and releases</a></h3>
+## Fifteen years, one thread
 
-My active fork tracks a fast-moving upstream desktop app while keeping the features I
-use. Its [release workflow](https://github.com/msegec/t3code_rookie/blob/main/.github/workflows/mzs-fleet-build.yml)
-restacks the changes, runs the checks, then publishes checksum-backed Linux and macOS
-builds with updater metadata.
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/career-arc-mobile.svg">
+  <img src="assets/career-arc.svg" alt="A fifteen-year journey from hands-on repair through integration and field systems to dependable software">
+</picture>
 
-Public product proposals include
-[project accents](https://github.com/pingdotgg/t3code/pull/7972),
-[file uploads](https://github.com/pingdotgg/t3code/pull/8151) and
-[repository discovery](https://github.com/pingdotgg/t3code/pull/8329). They show the
-other side of the work: interface details, persistence, failure paths and regression
-coverage.
+**Repair.** I started with failed computers, damaged electronics, unreliable networks
+and people who needed their technology working again. That taught me to diagnose
+before replacing, protect the data and explain the fix without making the owner feel
+small.
 
-<h3><a href="https://github.com/Ylianst/MeshAgent/pull/390">MeshAgent Linux session fix</a></h3>
+**Integrate.** The work grew into servers, communications, security and connected
+hardware. Repair became integration. The useful result was the whole system working
+together and still being supportable after handover.
 
-A small upstream proposal after reproducing a remote desktop failure caused by
-multiple active `logind` sessions. The two-line patch selects the real graphical
-session instead of the display-less user manager.
+**Operate.** Field technology added power, radio, weather, coordinates, compliance
+and large datasets. UAV operations, mapping and specialist electronics made testing
+and handover just as important as the technology itself.
 
-<h3><a href="https://github.com/msegec/odysseus-hmm">Odysseus safety telemetry</a></h3>
+**Build.** Those problems led deeper into software, automation and self-hosted
+platforms. Today I can follow a problem from the device through connectivity and data
+to the interface, release process and recovery notes behind it.
 
-An experiment on a self-hosted AI workspace. Three focused commits add observe-only
-traffic classifiers, provenance logging, admin endpoints and standard-library tests
-without turning the safety layer into a blocker.
+At each stage, the work moved closer to the join between systems. That is still where
+I am most useful.
 
-<h3><a href="https://github.com/msegec/threedtilesviewer">Nextcloud 3D Tiles viewer</a></h3>
+## Work that crosses my bench
 
-An original work-in-progress prototype joining Nextcloud file access with browser-based
-3D Tiles rendering, mobile layouts, coordinate handling and compressed geometry.
+The private work stays private, but its shape can be described.
+
+- **Computers, networks and recovery:** fault finding, data rescue, migrations and
+  inherited systems that need to return to service without losing what matters.
+- **Electronics and physical systems:** component-level diagnosis, commissioning,
+  maintenance, sensing, displays and practical fabrication when software alone cannot
+  solve the job.
+- **Field and spatial work:** UAV systems, photogrammetry, mapping, positioning and the
+  path from field capture to data somebody can inspect and use.
+- **Web tools and automation:** dashboards, reporting, scheduling, search, file
+  workflows and small operational systems shaped around how people already work.
+- **Platforms and delivery:** Linux, containers, self-hosted services, repeatable
+  builds, cross-platform packaging, health checks and recovery paths for systems that
+  need to run unattended.
+- **Testing and handover:** reproduction steps, logs, release artefacts and plain
+  documentation that give the next person a fair chance on a bad day.
+
+I do not draw a hard line between hardware, software and operations, because faults
+rarely respect one. The useful solution is usually the smallest one that removes the
+real constraint without hiding how it works.
+
+## The work tends to rhyme
+
+- The existing system mostly works, but fails at its seams.
+- Useful data exists, but is difficult to move, inspect or trust.
+- Hardware and software each make assumptions about the other.
+- A manual workflow needs to become repeatable without hiding failures.
+
+Most projects do not fail at the impressive part. They fail at the weak connection,
+the unchecked assumption, or the step only one person knows. I follow a fault across
+layers instead of stopping at the first green light.
+
+## Public proof, not the whole picture
+
+Much of the useful work cannot be shown. These public examples are a deliberately
+narrow window: enough evidence to show how I think, without exposing customer data,
+private infrastructure or unfinished commercial ideas.
+
+<h3><a href="https://github.com/msegec/t3code_rookie">T3 Code, maintained against a moving upstream</a></h3>
+
+My active fork preserves a small custom layer on a fast-moving desktop project. Its
+[release workflow](https://github.com/msegec/t3code_rookie/blob/main/.github/workflows/mzs-fleet-build.yml)
+checks and packages builds across operating systems. It demonstrates keeping change
+reproducible while upstream keeps moving.
+
+### [MeshAgent: isolate the actual fault](https://github.com/Ylianst/MeshAgent/pull/390)
+
+A narrow upstream Linux proposal developed from a reproducible failure. It shows the
+less glamorous work I value: find the cause, change the smallest surface and leave
+evidence another maintainer can check.
+
+### [Odysseus: observe before controlling](https://github.com/msegec/odysseus-hmm)
+
+A fork experiment adding passive observability and tests to a self-hosted workspace.
+The approach matters: measure first and keep the behaviour inspectable.
+
+### [3D tiles viewer, field data in the browser](https://github.com/msegec/threedtilesviewer)
+
+An original work-in-progress prototype exploring large spatial datasets, coordinates
+and smaller screens. It connects years of field-data work with one practical question:
+can somebody reach the information and understand it?
 
 ## How I work
 
-- Start with the real workflow.
-- Ship a small working slice, then improve it.
-- Prefer systems the owner can control and understand.
-- Treat tests, logs, screenshots and release files as part of the handover.
-- Keep private names, hosts and deployment details private.
+- Start with the real workflow, not the imagined clean version.
+- Diagnose before replacing, and protect valuable data before changing structure.
+- Ship a small working slice, then improve it with evidence.
+- Prefer systems the owner can control, understand and recover.
+- Treat tests, logs, release files and documentation as part of the handover.
+
+I would rather teach someone how their system works than make them dependent on me to
+keep it alive.
 
 ## Toolbox
 
-**Languages:** `TypeScript` `JavaScript` `Python` `PHP` `Go` `Swift` `Kotlin` `C` `C++`
+**Build:** `TypeScript` `JavaScript` `Python` `PHP` `Go` `Swift` `Kotlin` `C` `C++`
 
-**Web and data:** `Node.js` `Astro` `WebGL` `3D Tiles` `WordPress` `SQL`
+**Web and spatial:** `Node.js` `Astro` `WebGL` `3D Tiles` `GIS` `SQL`
 
-**Systems:** `Linux` `Docker` `Cloudflare` `Nextcloud` `GitHub Actions` `Raspberry Pi` `Orange Pi`
+**Systems and delivery:** `Linux` `Docker` `Cloudflare` `Nextcloud` `GitHub Actions` `Raspberry Pi` `Orange Pi`
 
 The stack changes with the job. The preference does not: boring enough to understand,
 visible enough to debug, and owned by the person who has to live with it.
@@ -90,20 +155,14 @@ visible enough to debug, and owned by the person who has to live with it.
 
 <!-- Refresh this block and both SVGs with python3 scripts/update-github-activity.py. -->
 <!-- activity:start -->
-**2,895 contributions** across **107 active days**, with a **41-day current streak**. **2,869 private contributions** appear only as aggregate counts. Public activity includes **7 commits** and **8 pull requests**.
+**2,897 contributions** across **107 active days**, with a **41-day current streak**. **2,870 private contributions** appear only as aggregate counts. Public activity includes **8 commits** and **8 pull requests**.
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/github-activity-mobile.svg">
   <img src="assets/github-activity.svg" alt="GitHub contribution calendar for the 12 months to 4 September 2026">
 </picture>
 
-<sub>GitHub API snapshot: 4 September 2026 at 13:02 AWST. Private repository, client, host and deployment details are omitted.</sub>
+<sub>GitHub API snapshot: 4 September 2026 at 13:18 AWST. Private repository, client, host and deployment details are omitted.</sub>
 <!-- activity:end -->
 
-## What I am working on
-
-Right now I am hardening local AI tooling, desktop release systems and small Linux
-machines that need to run unattended. Geospatial viewers and operational web tools
-remain the longer thread.
-
-For the fuller work history, projects and contact details, visit **[mzs.au](https://mzs.au)**.
+For the fuller work history and contact details, visit **[mzs.au](https://mzs.au)**.

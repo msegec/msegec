@@ -12,12 +12,9 @@
 **The handyman of digital integrations.**  
 15+ years helping people feel confident with their technology.
 
-[![Perth](https://img.shields.io/badge/Perth-Western%20Australia-245A3A?style=for-the-badge&labelColor=18231C)](https://mzs.au)
-[![Bench](https://img.shields.io/badge/15%2B%20years-on%20the%20bench-4F8A4C?style=for-the-badge&labelColor=18231C)](#fifteen-years-compressed)
-[![Focus](https://img.shields.io/badge/focus-practical%20systems-58BE78?style=for-the-badge&labelColor=18231C)](#project-work-redacted)
+[![Perth](https://img.shields.io/badge/Perth-Western%20Australia-245A3A?style=for-the-badge&labelColor=18231C)](https://mzs.au) [![Bench](https://img.shields.io/badge/15%2B%20years-on%20the%20bench-4F8A4C?style=for-the-badge&labelColor=18231C)](#fifteen-years-compressed) [![Focus](https://img.shields.io/badge/focus-practical%20systems-58BE78?style=for-the-badge&labelColor=18231C)](#project-work-redacted)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-mzs.au%2Fportfolio-245A3A?style=for-the-badge&labelColor=18231C)](https://mzs.au/portfolio)
-[![Resume](https://img.shields.io/badge/Resume-mzs.au%2Fresume-4F8A4C?style=for-the-badge&labelColor=18231C)](https://mzs.au/resume)
+[![Portfolio](https://img.shields.io/badge/Portfolio-mzs.au%2Fportfolio-245A3A?style=for-the-badge&labelColor=18231C)](https://mzs.au/portfolio) [![Resume](https://img.shields.io/badge/Resume-mzs.au%2Fresume-4F8A4C?style=for-the-badge&labelColor=18231C)](https://mzs.au/resume)
 
 `work` [history](#fifteen-years-compressed) · `projects` [catalogue](#project-work-redacted) · `public` [code](#public-code) · `live` [activity](#recent-github-activity)
 
@@ -233,34 +230,17 @@ An original browser-based spatial-data prototype joining file access with 3D Til
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts,js,python,php,go,swift,kotlin,c,cpp,nodejs,astro,linux,docker,cloudflare,githubactions,raspberrypi,wordpress&theme=dark">
-  <img src="https://skillicons.dev/icons?i=ts,js,python,php,go,swift,kotlin,c,cpp,nodejs,astro,linux,docker,cloudflare,githubactions,raspberrypi,wordpress&theme=light" alt="Toolbox icons for TypeScript, JavaScript, Python, PHP, Go, Swift, Kotlin, C, C++, Node.js, Astro, Linux, Docker, Cloudflare, GitHub Actions, Raspberry Pi and WordPress">
+  <source media="(prefers-color-scheme: dark)" srcset="https://skillicons.dev/icons?i=ts%2Cjs%2Cpython%2Cphp%2Cgo%2Cswift%2Ckotlin%2Cc%2Ccpp%2Cnodejs%2Castro%2Clinux%2Cdocker%2Ccloudflare%2Cgithubactions%2Craspberrypi%2Cwordpress&amp;theme=dark">
+  <img src="https://skillicons.dev/icons?i=ts%2Cjs%2Cpython%2Cphp%2Cgo%2Cswift%2Ckotlin%2Cc%2Ccpp%2Cnodejs%2Castro%2Clinux%2Cdocker%2Ccloudflare%2Cgithubactions%2Craspberrypi%2Cwordpress&amp;theme=light" alt="Toolbox icons for TypeScript, JavaScript, Python, PHP, Go, Swift, Kotlin, C, C++, Node.js, Astro, Linux, Docker, Cloudflare, GitHub Actions, Raspberry Pi and WordPress">
 </picture>
 
 <br>
 
-![TypeScript](https://img.shields.io/badge/TypeScript-245A3A?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-245A3A?style=flat-square&logo=javascript&logoColor=white)
-![Python](https://img.shields.io/badge/Python-245A3A?style=flat-square&logo=python&logoColor=white)
-![PHP](https://img.shields.io/badge/PHP-245A3A?style=flat-square&logo=php&logoColor=white)
-![Go](https://img.shields.io/badge/Go-245A3A?style=flat-square&logo=go&logoColor=white)
-![Swift](https://img.shields.io/badge/Swift-245A3A?style=flat-square&logo=swift&logoColor=white)
-![Kotlin](https://img.shields.io/badge/Kotlin-245A3A?style=flat-square&logo=kotlin&logoColor=white)
-![C](https://img.shields.io/badge/C-4F8A4C?style=flat-square&logo=c&logoColor=white)
-![C++](https://img.shields.io/badge/C++-4F8A4C?style=flat-square&logo=cplusplus&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-4F8A4C?style=flat-square&logo=nodedotjs&logoColor=white)
-![Astro](https://img.shields.io/badge/Astro-4F8A4C?style=flat-square&logo=astro&logoColor=white)
-![WebGL](https://img.shields.io/badge/WebGL-4F8A4C?style=flat-square)
-![3D Tiles](https://img.shields.io/badge/3D%20Tiles-4F8A4C?style=flat-square)
-![GIS](https://img.shields.io/badge/GIS-4F8A4C?style=flat-square)
-![SQL](https://img.shields.io/badge/SQL-4F8A4C?style=flat-square)
-![Linux](https://img.shields.io/badge/Linux-18231C?style=flat-square&logo=linux&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-18231C?style=flat-square&logo=docker&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-18231C?style=flat-square&logo=cloudflare&logoColor=white)
-![Nextcloud](https://img.shields.io/badge/Nextcloud-18231C?style=flat-square&logo=nextcloud&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-18231C?style=flat-square&logo=githubactions&logoColor=white)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-18231C?style=flat-square&logo=raspberrypi&logoColor=white)
-![Orange Pi](https://img.shields.io/badge/Orange%20Pi-18231C?style=flat-square)
+![TypeScript](https://img.shields.io/badge/TypeScript-245A3A?style=flat-square&logo=typescript&logoColor=white) ![JavaScript](https://img.shields.io/badge/JavaScript-245A3A?style=flat-square&logo=javascript&logoColor=white) ![Python](https://img.shields.io/badge/Python-245A3A?style=flat-square&logo=python&logoColor=white) ![PHP](https://img.shields.io/badge/PHP-245A3A?style=flat-square&logo=php&logoColor=white) ![Go](https://img.shields.io/badge/Go-245A3A?style=flat-square&logo=go&logoColor=white) ![Swift](https://img.shields.io/badge/Swift-245A3A?style=flat-square&logo=swift&logoColor=white) ![Kotlin](https://img.shields.io/badge/Kotlin-245A3A?style=flat-square&logo=kotlin&logoColor=white) ![C](https://img.shields.io/badge/C-4F8A4C?style=flat-square&logo=c&logoColor=white) ![C++](https://img.shields.io/badge/C++-4F8A4C?style=flat-square&logo=cplusplus&logoColor=white)
+
+![Node.js](https://img.shields.io/badge/Node.js-4F8A4C?style=flat-square&logo=nodedotjs&logoColor=white) ![Astro](https://img.shields.io/badge/Astro-4F8A4C?style=flat-square&logo=astro&logoColor=white) ![WebGL](https://img.shields.io/badge/WebGL-4F8A4C?style=flat-square) ![3D Tiles](https://img.shields.io/badge/3D%20Tiles-4F8A4C?style=flat-square) ![GIS](https://img.shields.io/badge/GIS-4F8A4C?style=flat-square) ![SQL](https://img.shields.io/badge/SQL-4F8A4C?style=flat-square)
+
+![Linux](https://img.shields.io/badge/Linux-18231C?style=flat-square&logo=linux&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-18231C?style=flat-square&logo=docker&logoColor=white) ![Cloudflare](https://img.shields.io/badge/Cloudflare-18231C?style=flat-square&logo=cloudflare&logoColor=white) ![Nextcloud](https://img.shields.io/badge/Nextcloud-18231C?style=flat-square&logo=nextcloud&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-18231C?style=flat-square&logo=githubactions&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-18231C?style=flat-square&logo=raspberrypi&logoColor=white) ![Orange Pi](https://img.shields.io/badge/Orange%20Pi-18231C?style=flat-square)
 
 </div>
 

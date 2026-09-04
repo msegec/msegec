@@ -9,7 +9,7 @@
 
 # Mark S
 
-**15+ years helping people feel confident with their technology, the handyman of digital integrations.**
+**The handyman of digital integrations. 15+ years helping people feel confident with their technology.**
 
 **[Portfolio](https://mzs.au/portfolio) | [Resume](https://mzs.au/resume)**
 
@@ -36,13 +36,14 @@ workflow.
   <img src="assets/career-arc.svg" alt="A fifteen-year journey from hands-on repair through integration and field systems to dependable software">
 </picture>
 
-The work progressed from repair and small networks into specialist electronics, field
-systems, spatial processing, application development and release operations.
+The first years were repair and small networks. Later work added specialist
+electronics, field systems, spatial processing, application development and release
+operations.
 
 ## Project work, redacted
 
-Related projects and duplicate checkouts are combined. Client identities, private
-architecture and unreleased differentiators are omitted.
+Related work is grouped. Client identities, private architecture and unreleased
+differentiators are omitted.
 
 ## Systems, hardware and recovery
 
@@ -56,14 +57,15 @@ damaged installs and incomplete migrations, then documented the result.
 
 ### 02 / electronic systems lifecycle
 
-<sub>Diagnostics / commissioning / maintenance / fabrication</sub>
+<sub>Diagnostics / commissioning / maintenance / quality</sub>
 
 Assembled, commissioned and maintained specialist electronics. Work included
 component diagnosis, preventative maintenance, part sourcing, fabrication and
 technical records. Repairs were assessed against downtime, parts availability and
-whether the result could be tested safely.
+whether the result could be tested safely. I also handled proof-of-concept testing,
+quality checks, certification support and regulatory documentation.
 
-<h3>03 / unattended Linux devices</h3>
+### 03 / unattended devices
 
 <sub>ARM Linux / media / displays / system services</sub>
 
@@ -142,7 +144,7 @@ self-hosted storage, without requiring specialist desktop software.
 
 Built electromechanical and sensor prototypes from sketch through controlled testing.
 Projects combined electronics, sensing, mechanical integration and fabricated parts
-to test feasibility without publishing their intended applications.
+to test feasibility.
 
 ## Platforms and developer tooling
 

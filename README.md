@@ -1,106 +1,104 @@
-<!-- Public GitHub profile README. Keep client names, private repo names, and deployment details out. -->
+<!-- Public GitHub profile README. Keep client names, private repo names and deployment details out. -->
 
 <div align="center">
 
 # Mark S
 
-### Practical systems builder · Perth, Australia 🇦🇺
+<h3>Practical systems builder in Perth, Western Australia</h3>
 
-Former integrator, now a hands-on developer who turns messy real-world workflows into
-working web tools, automations, self-hosted systems, and useful recovery paths — from
-drone/geospatial data portals and digital signage to small-business sites and IT recovery.
+**15 years helping people feel confident with their technology, the handyman of digital integrations.**
 
-[![CV / portfolio](https://img.shields.io/badge/CV%20%2F%20portfolio-mzs.au-0969da?style=for-the-badge&logo=readthedocs&logoColor=white)](https://mzs.au)
-[![GitHub](https://img.shields.io/badge/GitHub-@msegec-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/msegec)
-[![Location](https://img.shields.io/badge/Perth-Australia-2ea44f?style=for-the-badge&logo=googlemaps&logoColor=white)](https://github.com/msegec)
-[![Profile views](https://komarev.com/ghpvc/?username=msegec&style=for-the-badge&color=6f42c1&label=Profile+views)](https://github.com/msegec)
+Former integrator, somehow now a hands-on developer. I build and repair systems for
+real work: web apps, automation, self-hosted infrastructure, geospatial tools,
+digital signage and recovery paths.
 
-**Jump to:**
-[Work](#-what-i-work-on) ·
-[Toolbox](#-toolbox) ·
-[Highlights](#-recent-public-highlights) ·
-[How I build](#-how-i-tend-to-build) ·
-[Activity](#-github-activity-snapshot) ·
-[Focus](#-current-focus)
+**[Portfolio and CV](https://mzs.au)**
 
 </div>
 
----
+## What I build
 
-## 🛠 What I Work On
+I am usually at my best where software meets the awkward bit: existing hardware,
+inherited systems, valuable data, or a workflow that has outgrown the tools around it.
 
-| Domain | Focus |
-| --- | --- |
-| 🤖 **Self-hosted AI** | Agent tooling, memory, search, observability, local-first model workflows. |
-| 🛰 **Geospatial / 3D** | Drone & LiDAR data portals, photogrammetry, 3D Tiles, WebGL viewers, aerial mapping & inspection workflows. |
-| 📺 **Media & signage** | Digital signage platforms, playback control, browser extensions, media scheduling. |
-| 📊 **Business ops** | Dashboards, sign-in flows, reporting, scheduling, and marketing/lead-gen sites for trade & service businesses. |
-| 🐳 **Infrastructure** | Linux, Docker, Cloudflare, Nextcloud, GitHub Actions, WordPress, self-hosted systems. |
-| 🧹 **Handoffs & recovery** | Codebase cleanup, release packaging, data recovery, public-safe docs from private work. |
+- **Product and automation:** web tools, dashboards, sign-in, reporting, scheduling and browser extensions.
+- **Geospatial and field data:** drone and LiDAR portals, photogrammetry, 3D Tiles and WebGL viewers.
+- **Platforms and infrastructure:** self-hosted AI, Linux, Docker, Cloudflare, Nextcloud and release pipelines.
+- **Recovery and handover:** inherited code, data recovery, release packaging and documentation people can use.
 
-## 🧰 Toolbox
+## Selected public work
 
-**Languages**
+These are the useful public pieces I can show. Where a project builds on someone
+else's work, I say so.
 
-![JavaScript](https://img.shields.io/badge/JavaScript-111?style=flat-square&logo=javascript)
-![TypeScript](https://img.shields.io/badge/TypeScript-111?style=flat-square&logo=typescript)
-![Python](https://img.shields.io/badge/Python-111?style=flat-square&logo=python)
-![PHP](https://img.shields.io/badge/PHP-111?style=flat-square&logo=php)
-![Swift](https://img.shields.io/badge/Swift-111?style=flat-square&logo=swift)
-![Kotlin](https://img.shields.io/badge/Kotlin-111?style=flat-square&logo=kotlin)
-![C++](https://img.shields.io/badge/C%2B%2B-111?style=flat-square&logo=cplusplus)
+<h3><a href="https://github.com/msegec/t3code_rookie">T3 Code: features and releases</a></h3>
 
-**Frameworks & runtimes**
+My active fork tracks a fast-moving upstream desktop app while keeping the features I
+use. Its [release workflow](https://github.com/msegec/t3code_rookie/blob/main/.github/workflows/mzs-fleet-build.yml)
+restacks the changes, runs the checks, then publishes checksum-backed Linux and macOS
+builds with updater metadata.
 
-![Node.js](https://img.shields.io/badge/Node.js-111?style=flat-square&logo=nodedotjs)
-![Astro](https://img.shields.io/badge/Astro-111?style=flat-square&logo=astro)
-![WebGL](https://img.shields.io/badge/WebGL-111?style=flat-square&logo=webgl)
+Public product proposals include
+[project accents](https://github.com/pingdotgg/t3code/pull/7972),
+[file uploads](https://github.com/pingdotgg/t3code/pull/8151) and
+[repository discovery](https://github.com/pingdotgg/t3code/pull/8329). They show the
+other side of the work: interface details, persistence, failure paths and regression
+coverage.
 
-**Infra & platforms**
+<h3><a href="https://github.com/Ylianst/MeshAgent/pull/390">MeshAgent Linux session fix</a></h3>
 
-![Linux](https://img.shields.io/badge/Linux-111?style=flat-square&logo=linux)
-![Docker](https://img.shields.io/badge/Docker-111?style=flat-square&logo=docker)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-111?style=flat-square&logo=cloudflare)
-![Nextcloud](https://img.shields.io/badge/Nextcloud-111?style=flat-square&logo=nextcloud)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-111?style=flat-square&logo=githubactions)
+A small upstream proposal after reproducing a remote desktop failure caused by
+multiple active `logind` sessions. The two-line patch selects the real graphical
+session instead of the display-less user manager.
 
-## ⭐ Recent Public Highlights
+<h3><a href="https://github.com/msegec/odysseus-hmm">Odysseus safety telemetry</a></h3>
 
-> Most recent work is private, so it's summarized by **capability** rather than client, site, or deployment detail.
-> These public repos show the *shape* of the work without exposing private use cases.
+An experiment on a self-hosted AI workspace. Three focused commits add observe-only
+traffic classifiers, provenance logging, admin endpoints and standard-library tests
+without turning the safety layer into a blocker.
 
-| Repo | What it shows |
-| --- | --- |
-| 🤖 [odysseus-hmm](https://github.com/msegec/odysseus-hmm) | Self-hosted AI workspace: agents, memory, local-first UX, telemetry, model tooling. |
-| 🌍 [threedtilesviewer](https://github.com/msegec/threedtilesviewer) | Nextcloud/WebGL 3D Tiles viewer — file permissions, mobile support, geospatial rendering. |
-| 📺 [pisignage-server-pc-fedition](https://github.com/msegec/pisignage-server-pc-fedition) | Digital signage server/player management and media workflow adaptation. |
-| 🎬 [CableTVSimulator](https://github.com/msegec/CableTVSimulator) | Python media scheduling, playback simulation, catalog building, control interfaces. |
-| 🖥 [MeshCentral-ENHANCE-](https://github.com/msegec/MeshCentral-ENHANCE-) | Remote operations/RMM exploration, web UI work, operational tooling. |
-| 💡 [info-orbs-bretttechoriginal](https://github.com/msegec/info-orbs-bretttechoriginal) | ESP32 display experiments and small hardware UI customization. |
-| 🎮 [C&C code/modding forks](https://github.com/msegec?tab=repositories&q=CnC&type=&language=&sort=) | C++, HLSL, and legacy game/modding code exploration. |
+<h3><a href="https://github.com/msegec/threedtilesviewer">Nextcloud 3D Tiles viewer</a></h3>
 
-## 🧭 How I Tend To Build
+An original work-in-progress prototype joining Nextcloud file access with browser-based
+3D Tiles rendering, mobile layouts, coordinate handling and compressed geometry.
 
-- 🎯 Start from the real workflow, not the perfect architecture diagram.
-- 🍰 Ship small, working slices and keep durable notes for the next pass.
-- 🏠 Prefer self-hosted, owner-controlled systems where that matches the job.
-- 🔒 Keep public writeups useful while removing private names, paths, tokens, hosts, and deployment specifics.
-- 📦 Treat tests, logs, screenshots, and generated artifacts as part of the handoff, not an afterthought.
+## How I work
 
-## 📈 GitHub Activity Snapshot
+- Start with the real workflow.
+- Ship a small working slice, then improve it.
+- Prefer systems the owner can control and understand.
+- Treat tests, logs, screenshots and release files as part of the handover.
+- Keep private names, hosts and deployment details private.
 
-> A **static, private-aware** snapshot — not a live third-party stats widget.
-> It counts private work only as aggregate activity and omits private repo names, clients, hosts, and deployment paths.
+## Toolbox
 
-![Private-aware GitHub activity snapshot](assets/github-activity.svg)
+**Languages:** TypeScript, JavaScript, Python, PHP, Go, Swift, Kotlin, C and C++
 
-## 🚀 Current Focus
+**Web and data:** Node.js, Astro, WebGL, 3D Tiles, WordPress and SQL
 
-Building cleaner public surfaces around private, practical work: self-hosted AI tooling,
-geospatial viewers, operational dashboards, release-ready web apps, and a fuller CV at **[mzs.au](https://mzs.au)**.
+**Systems:** Linux, Docker, Cloudflare, Nextcloud, GitHub Actions, Raspberry Pi and Orange Pi
 
----
+The stack changes with the job. The preference does not: boring enough to understand,
+visible enough to debug, and owned by the person who has to live with it.
 
-<div align="center">
-<sub>Most active work lives in private repos. The public surface above is the deliberately-shareable slice —<br>names, hosts, and deployment specifics stay out by design.</sub>
-</div>
+## Recent GitHub activity
+
+<!-- Refresh this block and both SVGs with python3 scripts/update-github-activity.py. -->
+<!-- activity:start -->
+**2,892 contributions** across **107 active days**, with a **41-day current streak**. **2,867 private contributions** appear only as aggregate counts. Public activity includes **6 commits** and **8 pull requests**.
+
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/github-activity-mobile.svg">
+  <img src="assets/github-activity.svg" alt="GitHub contribution calendar for the 12 months to 4 September 2026">
+</picture>
+
+<sub>Snapshot: 4 September 2026. Private repository, client, host and deployment details are omitted.</sub>
+<!-- activity:end -->
+
+## What I am working on
+
+Right now I am hardening local AI tooling, desktop release systems and small Linux
+machines that need to run unattended. Geospatial viewers and operational web tools
+remain the longer thread.
+
+For the fuller work history, projects and contact details, visit **[mzs.au](https://mzs.au)**.

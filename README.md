@@ -37,8 +37,6 @@
 
 **Build.** Repeated operational problems became software, automation and self-hosted services. I now work across the whole path from physical device and source data to application, release and recovery, choosing the simplest useful boundary for each job.
 
-<img src="assets/divider.svg" alt="" width="100%">
-
 ## How I work
 
 **Whole stack, one owner.** Electronics, networks, field kit and code fail inside the same job. I look at the failure, not the layer I happen to be labelled for.
@@ -48,8 +46,6 @@
 **Prove it cold.** A build counts when the installed result starts from nothing and reaches its operating state. A green pipeline is not the finish line.
 
 **Simplest useful boundary.** Off-the-shelf first, glue second, custom code when the first two fall short. Every extra part is something the owner has to recover later.
-
-<img src="assets/divider.svg" alt="" width="100%">
 
 ## Project work, redacted
 
@@ -165,8 +161,6 @@ Built simulation and configuration tools used to test device workflows without r
 
 </details>
 
-<img src="assets/divider.svg" alt="" width="100%">
-
 ## Public code
 
 Most of the work above is private. These are smaller public pieces that show how I approach maintenance, fault isolation and original builds. Where something extends another project, it is labelled as a fork, proposal or experiment.
@@ -197,8 +191,6 @@ An original early-stage Nextcloud and 3D Tiles experiment. The repository captur
 
 <sub>Also on the account: unchanged forks of MeshCentral, the piSignage server and FieldStation42, kept to track upstreams for the remote management, signage and simulation work above.</sub>
 
-<img src="assets/divider.svg" alt="" width="100%">
-
 ## Toolbox
 
 **Applications:** `TypeScript` `JavaScript` `Python` `PHP` `Go` `Swift` `Kotlin` `C` `C++` `Node.js` `SolidJS` `React` `Astro` `Electron`
@@ -208,8 +200,6 @@ An original early-stage Nextcloud and 3D Tiles experiment. The repository captur
 **Systems:** `Linux` `Windows Server` `Docker` `Cloudflare` `GitHub Actions` `networking` `firewalls` `VPN` `Raspberry Pi` `Orange Pi`
 
 **Physical work:** `electronics` `embedded systems` `UAV systems` `photogrammetry` `3D printing` `fabrication` `QA` `compliance records`
-
-<img src="assets/divider.svg" alt="" width="100%">
 
 ## Credentials and standards
 
@@ -224,8 +214,6 @@ An original early-stage Nextcloud and 3D Tiles experiment. The repository captur
 ## Off the bench
 
 Component-level board repair and bringing dead devices back. 3D design, printing and CNC for the part that does not exist yet. Circuit bending, because old hardware deserves a second life.
-
-<img src="assets/divider.svg" alt="" width="100%">
 
 ## Recent GitHub activity
 

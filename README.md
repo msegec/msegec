@@ -16,7 +16,7 @@
 
 [Experience](#how-the-work-developed) · [How I work](#how-i-work) · [Project work](#project-work-redacted) · [Public code](#public-code) · [Credentials](#credentials-and-standards) · [Activity](#recent-github-activity)
 
-<sub>Open to freelance, contract or full-time work, on site around Perth or remote.</sub>
+Open to freelance, contract or full-time work, on site around Perth or remote.
 
 </div>
 
@@ -60,25 +60,25 @@ These are recurring areas of work, not a product catalogue. One project often cr
 
 ### 01 / managed networks and migrations
 
-<sub>Networks / servers / communications / remote access</sub>
+`Networks` `servers` `communications` `remote access`
 
 Designed and supported workstations, servers, wireless networks, communications, security controls and remote access. The same work included platform migrations, multi-site support, backup review, service recovery and practical documentation for the people taking ownership.
 
 ### 02 / electronics repair, commissioning and maintenance
 
-<sub>Diagnostics / fabrication / quality / compliance</sub>
+`Diagnostics` `fabrication` `quality` `compliance`
 
 Assembled and maintained specialist electronics, diagnosed component faults, sourced parts and fabricated replacements. I also ran product tests and prepared quality, certification and regulatory records. Repair decisions accounted for downtime, parts availability and whether the result could be verified safely.
 
 ### 03 / unattended devices
 
-<sub>Small computers / media / storage / system services</sub>
+`Small computers` `media` `storage` `system services`
 
 Built and recovered small Linux devices expected to run without supervision. Startup, media, storage, connectivity and resource use were treated as one system, including recovery after interruption and proof that a cold start reached the intended operating state.
 
 ### 04 / local-first indexing and search
 
-<sub>Mixed-format data / offline indexing / private source material</sub>
+`Mixed-format data` `offline indexing` `private source material`
 
 Built local tools that turn large mixed-format archives into a consistent, searchable view. Normalisation and indexing happen without moving the private source material away from the owner's machine.
 
@@ -89,19 +89,19 @@ Built local tools that turn large mixed-format archives into a consistent, searc
 
 ### 05 / business administration software
 
-<sub>Web applications / databases / permissions / reporting</sub>
+`Web applications` `databases` `permissions` `reporting`
 
 Built systems around contacts, jobs, inventory and reporting, shaped around the process already in use. Delivery covered data design, validation, permissions, imports, exports and clear operating instructions rather than forcing the work into a generic package.
 
 ### 06 / technical report viewers
 
-<sub>Structured exports / charts / filtering / desktop delivery</sub>
+`Structured exports` `charts` `filtering` `desktop delivery`
 
 Turned XML and CSV exports into searchable desktop reports with charts and filters. The emphasis was on making technical results easier to inspect while keeping a direct route back to the supplied records.
 
 ### 07 / remote content and device management
 
-<sub>Distributed devices / scheduled content / operational support</sub>
+`Distributed devices` `scheduled content` `operational support`
 
 Built management software and device integration for groups of remote displays. The work joined content preparation, schedules, device state and operator controls into one manageable workflow, with enough status information to support the devices from elsewhere.
 
@@ -112,25 +112,25 @@ Built management software and device integration for groups of remote displays. 
 
 ### 08 / UAV operations and field trials
 
-<sub>Flight systems / payloads / planning / training</sub>
+`Flight systems` `payloads` `planning` `training`
 
 Prepared equipment, coordinated pilots, ran field work, maintained aircraft and trained operators. Product evaluations and proof-of-concept trials brought hardware, sensors and operating procedures together before a documented handover.
 
 ### 09 / mapping and measurement workflows
 
-<sub>Photogrammetry / GIS / positioning / spatial processing</sub>
+`Photogrammetry` `GIS` `positioning` `spatial processing`
 
 Built workflows for image-based mapping, three-dimensional reconstruction, volumetric analysis, coordinate conversion, control points and field positioning. Utilities prepared shapefiles and other spatial data, checked inputs and reduced avoidable errors before the results reached viewers or reports.
 
 ### 10 / spatial data in the browser
 
-<sub>TypeScript / WebGL / 3D Tiles / spatial databases</sub>
+`TypeScript` `WebGL` `3D Tiles` `spatial databases`
 
 Developed browser tools for organising and viewing large spatial datasets. The work covered rendering, access control, coordinate handling and layouts that remained practical away from a specialist desktop workstation.
 
 ### 11 / electronics and sensor prototypes
 
-<sub>Control electronics / sensing / fabrication / testing</sub>
+`Control electronics` `sensing` `fabrication` `testing`
 
 Built and tested prototypes combining electronics, sensors, mechanical parts and custom fabrication. The point was to answer a concrete feasibility question, measure the result and expose weak assumptions before committing to a larger build.
 
@@ -141,25 +141,25 @@ Built and tested prototypes combining electronics, sensors, mechanical parts and
 
 ### 12 / infrastructure and small-device fleets
 
-<sub>Linux / containers / virtualisation / remote operations</sub>
+`Linux` `containers` `virtualisation` `remote operations`
 
 Created operational tooling for Linux services, self-hosted infrastructure and groups of small devices. It covers readiness, maintenance, health and recovery while keeping routine checks repeatable and failures visible.
 
 ### 13 / desktop packaging and updates
 
-<sub>Cross-platform applications / CI / releases / verification</sub>
+`Cross-platform applications` `CI` `releases` `verification`
 
 Built repeatable checking, packaging and release paths for desktop software across operating systems. That includes maintaining patches, producing release artefacts and proving the installed application, not merely the build job that created it.
 
 ### 14 / controlled AI and developer automation
 
-<sub>Local tools / coding agents / reviewed changes / evidence</sub>
+`Local tools` `coding agents` `reviewed changes` `evidence`
 
 Worked on locally controlled AI tools and coding-agent workflows, with emphasis on reliable operation, reviewed changes and verifiable results. Automation is useful when its authority is clear and its output can still be inspected by a person.
 
 ### 15 / simulation, testing and configuration
 
-<sub>Device workflows / validation / repeatable tests</sub>
+`Device workflows` `validation` `repeatable tests`
 
 Built simulation and configuration tools used to test device workflows without requiring target hardware for every run. These tools make state changes visible, catch invalid inputs early and turn repeated manual checks into reproducible tests.
 
@@ -173,29 +173,29 @@ Most of the work above is private. These are smaller public pieces that show how
 
 ### [T3&nbsp;Code](https://github.com/msegec/t3code_rookie)
 
-<sub>Active fork / interface / server / tests / desktop releases</sub>
+`Active fork` `interface` `server` `tests` `desktop releases`
 
 Maintains a focused feature layer over a fast-moving upstream application. Its release path restacks that work, runs the required checks and publishes checksum-backed desktop builds with updater metadata. [Public upstream proposals](https://github.com/pingdotgg/t3code/pulls?q=is%3Apr+author%3Amsegec) cover interface and repository workflow improvements.
 
 ### [MeshAgent proposal](https://github.com/Ylianst/MeshAgent/pull/390)
 
-<sub>Linux session handling / reproduced failure / upstream patch</sub>
+`Linux session handling` `reproduced failure` `upstream patch`
 
 A small Linux session-handling fix developed from a reproduced remote desktop failure, then submitted to the project that owns the behaviour.
 
 ### [Odysseus experiment](https://github.com/msegec/odysseus-hmm)
 
-<sub>Fork / observe-only telemetry / provenance / tests</sub>
+`Fork` `observe-only telemetry` `provenance` `tests`
 
 A fork of [arcahyadi/odysseus](https://github.com/arcahyadi/odysseus) with a focused observe-only telemetry experiment. The added checks record useful evidence without turning the safety layer into a blocker.
 
 ### [3D tiles viewer](https://github.com/msegec/threedtilesviewer)
 
-<sub>Original early-stage experiment / Nextcloud / browser spatial data</sub>
+`Original early-stage experiment` `Nextcloud` `browser spatial data`
 
 An original early-stage Nextcloud and 3D Tiles experiment. The repository captures the intended file-access and browser-viewing direction, but remains a work in progress.
 
-<sub>Also on the account: unchanged forks of MeshCentral, the piSignage server and FieldStation42, kept to track upstreams for the remote management, signage and simulation work above.</sub>
+Also on the account: unchanged forks of MeshCentral, the piSignage server and FieldStation42, kept to track upstreams for the remote management, signage and simulation work above.
 
 <img src="assets/divider.svg" alt="" width="100%">
 
@@ -213,7 +213,7 @@ An original early-stage Nextcloud and 3D Tiles experiment. The repository captur
 
 ## Credentials and standards
 
-<sub>Licence / compliance / quality practice</sub>
+`Licence` `compliance` `quality practice`
 
 **Remote Pilot Licence (RePL).** Civil Aviation Safety Authority, 2021. Field operations, training and aircraft maintenance in the sections above sit under it.
 

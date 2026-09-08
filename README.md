@@ -12,9 +12,11 @@
 **The handyman of digital integrations.**  
 15+ years helping people feel confident with their technology.
 
-[Portfolio](https://mzs.au/portfolio) · [Resume](https://mzs.au/resume)
+[Portfolio](https://mzs.au/portfolio) · [Resume](https://mzs.au/resume) · [Contact](https://mzs.au/contact)
 
-[Experience](#how-the-work-developed) · [Project work](#project-work-redacted) · [Public code](#public-code) · [Activity](#recent-github-activity)
+[Experience](#how-the-work-developed) · [How I work](#how-i-work) · [Project work](#project-work-redacted) · [Public code](#public-code) · [Credentials](#credentials-and-standards) · [Activity](#recent-github-activity)
+
+<sub>Open to freelance, contract or full-time work, on site around Perth or remote.</sub>
 
 </div>
 
@@ -34,6 +36,20 @@
 **Operate.** Specialist electronics led into commissioning, product evaluation, quality and compliance records, UAV operations, mapping and field trials. I prepared equipment, coordinated pilots, maintained aircraft, trained operators and turned field data into something another person could use.
 
 **Build.** Repeated operational problems became software, automation and self-hosted services. I now work across the whole path from physical device and source data to application, release and recovery, choosing the simplest useful boundary for each job.
+
+<img src="assets/divider.svg" alt="" width="100%">
+
+## How I work
+
+**Whole stack, one owner.** Electronics, networks, field kit and code fail inside the same job. I look at the failure, not the layer I happen to be labelled for.
+
+**Handover is the job.** I would rather show someone how their system works than keep them dependent on me to fix it. Documentation is written for the person who inherits the result.
+
+**Prove it cold.** A build counts when the installed result starts from nothing and reaches its operating state. A green pipeline is not the finish line.
+
+**Simplest useful boundary.** Off-the-shelf first, glue second, custom code when the first two fall short. Every extra part is something the owner has to recover later.
+
+<img src="assets/divider.svg" alt="" width="100%">
 
 ## Project work, redacted
 
@@ -149,6 +165,8 @@ Built simulation and configuration tools used to test device workflows without r
 
 </details>
 
+<img src="assets/divider.svg" alt="" width="100%">
+
 ## Public code
 
 Most of the work above is private. These are smaller public pieces that show how I approach maintenance, fault isolation and original builds. Where something extends another project, it is labelled as a fork, proposal or experiment.
@@ -157,7 +175,7 @@ Most of the work above is private. These are smaller public pieces that show how
 
 <sub>Active fork / interface / server / tests / desktop releases</sub>
 
-Maintains a focused feature layer over a fast-moving upstream application. Its release path restacks that work, runs the required checks and publishes checksum-backed desktop builds with updater metadata. Public upstream proposals cover interface and repository workflow improvements.
+Maintains a focused feature layer over a fast-moving upstream application. Its release path restacks that work, runs the required checks and publishes checksum-backed desktop builds with updater metadata. [Public upstream proposals](https://github.com/pingdotgg/t3code/pulls?q=is%3Apr+author%3Amsegec) cover interface and repository workflow improvements.
 
 ### [MeshAgent proposal](https://github.com/Ylianst/MeshAgent/pull/390)
 
@@ -177,6 +195,10 @@ A fork of [arcahyadi/odysseus](https://github.com/arcahyadi/odysseus) with a foc
 
 An original early-stage Nextcloud and 3D Tiles experiment. The repository captures the intended file-access and browser-viewing direction, but remains a work in progress.
 
+<sub>Also on the account: unchanged forks of MeshCentral, the piSignage server and FieldStation42, kept to track upstreams for the remote management, signage and simulation work above.</sub>
+
+<img src="assets/divider.svg" alt="" width="100%">
+
 ## Toolbox
 
 **Applications:** `TypeScript` `JavaScript` `Python` `PHP` `Go` `Swift` `Kotlin` `C` `C++` `Node.js` `SolidJS` `React` `Astro` `Electron`
@@ -187,19 +209,37 @@ An original early-stage Nextcloud and 3D Tiles experiment. The repository captur
 
 **Physical work:** `electronics` `embedded systems` `UAV systems` `photogrammetry` `3D printing` `fabrication` `QA` `compliance records`
 
+<img src="assets/divider.svg" alt="" width="100%">
+
+## Credentials and standards
+
+<sub>Licence / compliance / quality practice</sub>
+
+**Remote Pilot Licence (RePL).** Civil Aviation Safety Authority, 2021. Field operations, training and aircraft maintenance in the sections above sit under it.
+
+**Product compliance.** Prepared and ran testing and records against FCC Part 15 and 18, IEC 62368, RoHS and WEEE, with ISO 9001 quality practice around them.
+
+**Security fundamentals.** Independent study and penetration testing practice from 2023, applied to backup review, remote access and hardening work.
+
+## Off the bench
+
+Component-level board repair and bringing dead devices back. 3D design, printing and CNC for the part that does not exist yet. Circuit bending, because old hardware deserves a second life.
+
+<img src="assets/divider.svg" alt="" width="100%">
+
 ## Recent GitHub activity
 
 <!-- Refresh this block and both SVGs with python3 scripts/update-github-activity.py. -->
 <!-- activity:start -->
 
-**2,916 contributions** across **107 active days**, with a current streak of **41 days**. GitHub counted **13 public commit contributions** and **9 public pull requests**. Private work appears only as an aggregate count of **2,883 contributions**.
+**3,403 contributions** across **108 active days**, with a current streak of **45 days**. GitHub counted **14 public commit contributions** and **9 public pull requests**. Private work appears only as an aggregate count of **3,369 contributions**.
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/github-activity-mobile.svg">
-  <img src="assets/github-activity.svg" alt="GitHub contribution calendar for the 12 months to 4 September 2026" width="100%">
+  <img src="assets/github-activity.svg" alt="GitHub contribution calendar for the 12 months to 9 September 2026" width="100%">
 </picture>
 
-<sub>GitHub API snapshot: 4 September 2026 at 21:44 AWST. Private repository, client, host and deployment details are omitted.</sub>
+<sub>GitHub API snapshot: 9 September 2026 at 04:15 AWST. Private repository, client, host and deployment details are omitted.</sub>
 <!-- activity:end -->
 
 <div align="center">

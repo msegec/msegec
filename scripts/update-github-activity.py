@@ -94,6 +94,9 @@ def format_timestamp(value: datetime, abbreviated: bool = False) -> str:
 
 
 def current_streak(days: list[dict]) -> int:
+    # The final day is today and is still in progress; an empty today does not break the streak.
+    if days and days[-1]["contributionCount"] == 0:
+        days = days[:-1]
     streak = 0
     for day in reversed(days):
         if day["contributionCount"] == 0:

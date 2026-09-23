@@ -171,6 +171,12 @@ Built simulation and configuration tools used to test device workflows without r
 
 Most of the work above is private. These are smaller public pieces that show how I approach maintenance, fault isolation and original builds. Where something extends another project, it is labelled as a fork, proposal or experiment.
 
+### [Rockett CAD](https://github.com/msegec/Rockett-CAD)
+
+`Active fork` `parametric CAD` `OpenCascade` `browser` `self-hosted`
+
+My latest project is a fork of [llambkin/Rockett-CAD](https://github.com/llambkin/Rockett-CAD), a browser-based CAD application built around constrained sketches, solid modelling and an editable feature timeline. The current focus is designing parts for 3D printing. CNC toolpaths and PCB and electrical plugins are planned extensions.
+
 ### [T3&nbsp;Code](https://github.com/msegec/t3code_rookie)
 
 `Active fork` `interface` `server` `tests` `desktop releases`
@@ -232,14 +238,14 @@ Component-level board repair and bringing dead devices back. 3D design, printing
 <!-- Refresh this block and both SVGs with python3 scripts/update-github-activity.py. -->
 <!-- activity:start -->
 
-**3,403 contributions** across **108 active days**, with a current streak of **45 days**. GitHub counted **14 public commit contributions** and **9 public pull requests**. Private work appears only as an aggregate count of **3,369 contributions**.
+**3,834 contributions** across **117 active days**, with a current streak of **60 days**. GitHub counted **18 public commit contributions** and **10 public pull requests**. Private work appears only as an aggregate count of **3,794 contributions**.
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/github-activity-mobile.svg">
-  <img src="assets/github-activity.svg" alt="GitHub contribution calendar for the 12 months to 9 September 2026" width="100%">
+  <img src="assets/github-activity.svg" alt="GitHub contribution calendar for the 12 months to 23 September 2026" width="100%">
 </picture>
 
-<sub>GitHub API snapshot: 9 September 2026 at 04:15 AWST. Private repository, client, host and deployment details are omitted.</sub>
+<sub>GitHub API snapshot: 23 September 2026 at 18:38 AWST. Private repository, client, host and deployment details are omitted.</sub>
 <!-- activity:end -->
 
 <div align="center">
